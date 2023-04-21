@@ -4,9 +4,15 @@
   "description": "simple crud application with nodejs & express js",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.4",
+    "nodemon": "^2.0.22"
+  }
 }
