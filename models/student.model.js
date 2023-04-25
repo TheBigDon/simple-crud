@@ -5,7 +5,7 @@ const studentSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-  roll: {
+  gradebook: {
     type: String,
     required: true,
     unique: true,
