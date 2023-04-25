@@ -4,7 +4,6 @@ const mongoose = require("mongoose");
 const app = express();
 
 const port = 9000;
-
 const url = "mongodb://localhost:27017";
 
 mongoose.connect(url, { useNewUrlParser: true });
@@ -17,6 +16,9 @@ try {
 } catch (error) {
   console.log("Error: " + error);
 }
+
+const router = require("./routes/student.routes");
+app.use("/students", router);
 
 app.listen(port, () => {
   console.log("Server started");
