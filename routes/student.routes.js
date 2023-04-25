@@ -6,8 +6,8 @@ const router = express.Router();
 
 router.get("/", student.getAll);
 router.get("/:gradebook", student.getStudentByGradebook);
-router.post("/", student.create);
-router.patch("/:gradebook", student.update);
-router.delete("/:gradebook", student.delete);
+router.post("/", student.createStudent);
+router.patch("/:gradebook", student.updateStudent);
+router.delete("/:gradebook", student.deleteStudent);
 
 module.exports = router;
